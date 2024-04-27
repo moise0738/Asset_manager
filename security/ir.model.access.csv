@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_asset_manager_material_category_user,Access Rights for Material Category User Group,model_asset_manager_material_category,asset_manager_group_user,1,0,0,0
+access_asset_manager_material_category_manager,Access Rights for Material Category Manager Group,model_asset_manager_material_category,asset_manager_group_manager,1,1,1,1
+
+access_asset_manager_material_user,Access Rights for Material User Group,model_asset_manager_material,asset_manager_group_user,1,0,0,0
+access_asset_manager_material_manager,Access Rights for Material Manager Group,model_asset_manager_material,asset_manager_group_manager,1,1,1,1
+
+access_asset_manager_maintenance_user,Access Rights for Maintenance User Group,model_asset_manager_maintenance,asset_manager_group_user,1,0,0,0
+access_asset_manager_maintenance_manager,Access Rights for Maintenance Manager Group,model_asset_manager_maintenance,asset_manager_group_manager,1,1,1,1
+
+access_stock_location_user,Access Rights for Stock Location User Group,model_stock_location,asset_manager_group_user,1,0,0,0
+access_stock_location_manager,Access Rights for Stock Location Manager Group,model_stock_location,asset_manager_group_manager,1,1,1,1
+
+access_asset_manager_hr_employee_user,Access Rights for HR Employee User Group,model_hr_employee,asset_manager_group_user,1,0,0,0
+access_asset_manager_hr_employee_manager,Access Rights for HR Employee Manager Group,model_hr_employee,asset_manager_group_manager,1,1,1,1
+

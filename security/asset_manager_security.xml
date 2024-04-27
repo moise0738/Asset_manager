@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Définition de la catégorie de module -->
+    <record id="asset_manager_security_category" model="ir.module.category">
+        <field name="name">Asset Manager</field>
+        <field name="description">Gestion des droits pour le module Asset Manager</field>
+    </record>
+
+    <!-- Définition du groupe d'utilisateurs -->
+    <record id="asset_manager_group_user" model="res.groups">
+        <field name="name">Utilisateurs</field>
+        <field name="category_id" ref="asset_manager_security_category" />
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <!-- Définition du groupe d'administrateurs -->
+    <record id="asset_manager_group_manager" model="res.groups">
+        <field name="name">Administrateurs</field>
+        <field name="category_id" ref="asset_manager_security_category" />
+        <field name="implied_ids" eval="[(4, ref('asset_manager_group_user'))]" />
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]" />
+    </record>
+
+</odoo>
